@@ -4,12 +4,13 @@ Console.Clear();
 Console.Write("Введите цифру, обозначающую день недели: ");
 int n = int.Parse(Console.ReadLine()!);
 
-if (n > 0 && n <= 7 )
+while (n < 1 || n > 7)
 {
-    if (n <= 5)
-    Console.WriteLine("Будний день");
-    else 
-    Console.WriteLine("Выходной день");
+    Console.Write("Неверно введен день недели! \nПовторите ввод: ");
+    n = int.Parse(Console.ReadLine()!);
 }
-else 
-Console.WriteLine("Неверно введен день недели, повторите ");
+
+if (n <= 5)
+    Console.WriteLine($"Введенный день {n} - Будний день");
+else
+    Console.WriteLine($"Введенный день {n} - Выходной день");
