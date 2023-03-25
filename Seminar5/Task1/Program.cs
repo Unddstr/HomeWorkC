@@ -20,9 +20,9 @@ int EvenInArray(int[] array)
 }
 
 Console.Clear();
-Console.Write("Введите количество элементов массива: ");
+Console.WriteLine("Введите количество элементов массива: ");
 int n = int.Parse(Console.ReadLine()!);
 int[] array = new int[n];
 InputArray(array);
 Console.WriteLine($"[{string.Join(", ", array)}]");
-Console.WriteLine($"Количество четных элементов массива: {EvenInArray(array)}");
+Console.WriteLine(EvenInArray("Количество четных элементовarray));
