@@ -53,9 +53,6 @@ int SumRow(int[,] matrix)
             minSum = sum;
             minRow = i;
         }
-
-        Console.WriteLine("строка: " + (i+1) + "\tsum: " + sum + "\tminsum: " + minSum);
-
     }
     return minRow + 1;
 }
